@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Will you be my Valentine ❤️</title>
+    <style>
+        body {
+            background: linear-gradient(to right, #ff758c, #ff7eb3);
+            font-family: Arial, sans-serif;
+            text-align: center;
+            color: white;
+            margin-top: 100px;
+        }
+        h1 { font-size: 45px; }
+        p { font-size: 22px; }
+        button {
+            background: white;
+            color: #ff4081;
+            border: none;
+            padding: 12px 25px;
+            font-size: 18px;
+            border-radius: 20px;
+            cursor: pointer;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="question">
+        <h1>💖 Will you be my Valentine Poonnu? 💖</h1>
+        <p>You are the most special person in my life 🥺❤️</p>
+        <button onclick="yesClicked()">Yes ❤️</button>
+        <button onclick="noClicked()">No 😒</button>
+    </div>
+
+    <div id="yesPage" style="display:none;">
+        <h1>🥰 YAYYY!! 🥰</h1>
+        <p>You just made me the happiest person alive  athukond booby tharo😝🥲❤️</p>
+        <p>I Love You So Much Poonnuve 💖</p>
+    </div>
+
+    <script>
+        function yesClicked() {
+            document.getElementById("question").style.display = "none";
+            document.getElementById("yesPage").style.display = "block";
+        }
+
+        function noClicked() {
+            alert("Wrong answer 😌 Onnude aalochikk ithrem kashttapette alle njn🥲💔...");
+        }
+    </script>
+
+</body>
+</html>
